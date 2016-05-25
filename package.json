@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec 'tests/**/*.test.js'",
-    "lint": "eslint './*.js' 'tests/**/*.js'",
+    "lint": "eslint './*.js' './src/**/*.js' 'tests/**/*.js'",
     "ci": "npm run lint && npm test"
   },
   "keywords": [
@@ -30,5 +30,10 @@
     "eslint-plugin-jsx-a11y": "^1.0.4",
     "eslint-plugin-react": "^5.0.1",
     "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "ajv": "^4.0.6",
+    "json-schema-defaults": "^0.1.1",
+    "snake-case": "^1.1.2"
   }
 }
