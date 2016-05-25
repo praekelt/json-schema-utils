@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-var cli = require('yargs');
+const cli = require('yargs');
+const build = require('./build');
+
 
 cli
   .usage('Usage: $0 [options] module')
@@ -7,5 +9,5 @@ cli
   .command(
     'build <module>',
     'Build and output a json schema from given module path',
-    require('./build'))
+    build)
   .argv;
