@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const build = require('../src/build');
+const build = require('../build');
 
 
 describe("build", () => {
