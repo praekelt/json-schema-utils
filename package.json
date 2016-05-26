@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "description": "js utils for how we use JSON Schema",
   "main": "index.js",
+  "bin": {
+    "json-schema-utils": "./src/cli/index.js"
+  },
   "scripts": {
     "test": "mocha -R spec 'tests/**/*.test.js'",
-    "lint": "eslint './*.js' 'tests/**/*.js'",
+    "lint": "eslint './*.js' './src/**/*.js' 'tests/**/*.js'",
     "ci": "npm run lint && npm test"
   },
   "keywords": [
@@ -30,5 +33,10 @@
     "eslint-plugin-jsx-a11y": "^1.0.4",
     "eslint-plugin-react": "^5.0.1",
     "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "js-yaml": "^3.6.1",
+    "json-schema-deref-sync": "^0.3.1",
+    "yargs": "^4.7.1"
   }
 }
