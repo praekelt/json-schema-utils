@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "js utils for how we use JSON Schema",
   "main": "index.js",
+  "bin": {
+    "json-schema-utils": "./src/cli/index.js"
+  },
   "scripts": {
     "test": "mocha -R spec 'tests/**/*.test.js'",
     "lint": "eslint './*.js' './src/**/*.js' 'tests/**/*.js'",
@@ -34,6 +37,9 @@
   "dependencies": {
     "ajv": "^4.0.6",
     "json-schema-defaults": "^0.1.1",
-    "snake-case": "^1.1.2"
+    "snake-case": "^1.1.2",
+    "js-yaml": "^3.6.1",
+    "json-schema-deref-sync": "^0.3.1",
+    "yargs": "^4.7.1"
   }
 }
