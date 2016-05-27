@@ -35,6 +35,9 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
+    "ajv": "^4.0.6",
+    "json-schema-defaults": "^0.1.1",
+    "snake-case": "^1.1.2",
     "js-yaml": "^3.6.1",
     "json-schema-deref-sync": "^0.3.1",
     "yargs": "^4.7.1"
