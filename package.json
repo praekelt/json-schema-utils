@@ -1,6 +1,6 @@
 {
   "name": "@praekelt/json-schema-utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "js utils for how we use JSON Schema",
   "main": "index.js",
   "bin": {
